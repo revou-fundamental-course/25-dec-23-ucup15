@@ -1,0 +1,54 @@
+<!-- Author : Muhammad Yusup
+     Date   : 1 January 2024
+     Fundamental Course RevoU -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <title>Segitiga Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <img id="revouImage" src="image/Logo_RevoU.png" alt="">
+        <h1>Segitiga Calculator</h1>
+
+        <!--line 18-20 is code to swtich the formula (luas segitiga to keliling segitiga)-->
+        <div>
+             <a href="indexKeliling.html" class="luas">Clik This Button to Change the Formula</a>
+        </div>
+
+        <!--line 24 is a code for displaying the image (luas segitiga)-->
+        <img id="triangleImage1" src="image/luas-segitiga.jpg" alt="">
+        <br>
+
+        <!--line 28-32 is label for input the value of base and height-->
+        <h2>Rumus Menghitung Luas Segitiga</h2>
+        <label for="base">Alas:</label>
+        <input type="number" id="base" placeholder="Masukkan alas">
+        <label for="height">Tinggi:</label>
+        <input type="number" id="height" placeholder="Masukkan tinggi">
+
+        <!--line 31-32 is a code button for result and reset the value -->
+        <button onclick="calculateArea()">Hitung Luas</button>
+        <button onclick="resetResult();resetbtn2()";>Reset</button>
+
+         <!--line 38-40 is a code for displaying value to website-->
+        <div id="Output3"></div>
+        <div id="Output4"></div>
+        <div id="result"></div>
+
+        <!--line 43-48 is a code for reset the value to null-->
+        <script>
+              function resetResult(){
+                document.getElementById('base').value='';
+                document.getElementById('height').value='';
+            }
+        </script>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
